@@ -1,4 +1,7 @@
 # Chapter 3: Functions - The Collatz Sequence
+# Author: Paul Jr Fernandez
+# Changelog:
+# 16 Jan 2017 v1.0: Added changelog and some comments to increase readability
 
 # Import necessary modules
 import sys
@@ -13,12 +16,12 @@ def collatz(num):
 # Main
 print("Collatz Sequence Generator")
 print("Enter the number:",end='')
-try:
+try: # Ensure input is an integer
     seq_num = input_number = int(input())
 except ValueError:
     print('Value entered is not an integer!\nPlease enter an integer value.')
     sys.exit(2) # Error: Non-integer value entered
-if input_number <= 0:
+if input_number <= 0: # Collatz sequence is for positive integers only
     print("The collatz sequence can be only generated for numbers greater than 0")
     sys.exit(1) # Warning: Integer value less than 1 entered
 else:
