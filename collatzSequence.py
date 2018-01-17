@@ -2,6 +2,8 @@
 # Author: Paul Jr Fernandez
 # Changelog:
 # 16 Jan 2017 v1.0: Added changelog and some comments to increase readability
+# 17 Jan 2017 v1.1: Added incorrect input to output statement and improved readability \
+#                   of output message for exit(2)
 
 # Import necessary modules
 import sys
@@ -17,11 +19,13 @@ def collatz(num):
 print("Collatz Sequence Generator")
 print("Enter the number:",end='')
 try: # Ensure input is an integer
-    seq_num = input_number = int(input())
+    input_number = input()
+    seq_num = int(input_number) # Converting input string type to integer for calculations
 except ValueError:
-    print('Value entered is not an integer!\nPlease enter an integer value.')
+    print('"' + input_number + '"' + ' is not an integer!\n' \
+            + 'Please enter an integer value.')
     sys.exit(2) # Error: Non-integer value entered
-if input_number <= 0: # Collatz sequence is for positive integers only
+if seq_num <= 0: # Collatz sequence is for positive integers only
     print("The collatz sequence can be only generated for numbers greater than 0")
     sys.exit(1) # Warning: Integer value less than 1 entered
 else:
