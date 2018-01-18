@@ -1,8 +1,8 @@
 # Chapter 3: Functions - The Collatz Sequence
 # Author: Paul Jr Fernandez
 # Changelog:
-# 16 Jan 2017 v1.0: Added changelog and some comments to increase readability
-# 17 Jan 2017 v1.1: Added incorrect input to output statement and improved readability \
+# 16 Jan 2018 v1.0: Added changelog and some comments to increase readability
+# 17 Jan 2018 v1.1: Added incorrect input to output statement and improved readability \
 #                   of output message for exit(2)
 
 # Import necessary modules
