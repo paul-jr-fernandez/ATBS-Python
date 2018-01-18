@@ -1,7 +1,7 @@
 # Chapter 4: Lists - Comma Code
 # Author: Paul Jr Fernandez
 # Changelog:
-# 18 Jan 2017 v1.0: Initial Release
+# 18 Jan 2018 v1.0: Initial Release
 
 # Function splitList that converts the input list into a comma/and separated string
 def splitList(mirrorList):
